@@ -18,39 +18,30 @@ session = Session()
 # Obtener todos los registros de clase Institucion 
 institucion = session.query(Institucion).all()
 
-# Se recorre la lista a través de un ciclo
-# repetitivo for en python
-print("Presentación de Institucion")
-for s in institucion:
-    print("%s" % (s))
-    print("---------")
+# Imprimir resultados
+for i in institucion:
+    print(i)
 
-# Obtener todos los registros de clase Departamento
+
+# Obtener todos los registros de clase Departamento 
 departamento = session.query(Departamento).all()
 
-# Se recorre la lista a través de un ciclo
-# repetitivo for en python
-print("Presentación de Departamento")
-for s in departamento:
-    print("%s" % (s))
-    print("---------")
+# Imprimir resultados
+for i in departamento:
+    print(i)
 
-# Obtener todos los registros de clase Investigador
+
+# Obtener todos los registros de clase Investigador 
 investigador = session.query(Investigador).all()
 
-# Se recorre la lista a través de un ciclo
-# repetitivo for en python
-print("Presentación de Investigador")
-for s in institucion:
-    print("%s" % (s))
-    print("---------")
+# Imprimir resultados
+for i in investigador:
+    print(i)
 
-# Obtener todos los registros de clase Publicacion 
-pnstitucion = session.query(Publicacion).all()
 
-# Se recorre la lista a través de un ciclo
-# repetitivo for en python
-print("Presentación de Publicacion")
-for s in institucion:
-    print("%s" % (s))
-    print("---------")
+# Obtener todos los registros de clase Publicacion
+publicacion = session.query(Publicacion).all()
+
+# Imprimir resultados
+for i in publicacion:
+    print(i)
